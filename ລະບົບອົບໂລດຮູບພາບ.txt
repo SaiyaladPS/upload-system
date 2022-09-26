@@ -1,0 +1,11 @@
+ເປັນລະບົບສຳລົບການອັບໂລດຮູບພາບ ມີຖານຂໍ້ມູນເປັນດັ່ງນີ້:
+ຊື່ຖານຂໍ້ມູນແມ່ນ: upload_db
+
+ຄຳສັ່ງທີ່ໃຊ້ສ້າງຕາຕະລາງຂໍ້ມູນ:
+
+CREATE TABLE images (
+    id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    file_name varchar(255) NOT NULL,
+    uploaded_on datetime NOT NULL, ຈະເອົາໄວ້ເກັບ ປີ ເດືອນ ວັນທີ່ ຊົ່ວໂມງ ນາທີ່ ວິນາທີ່ ຂອງຮູບທີ່ອັບໂລດ
+    status enum('1', '0') NOT NULL DEFAULT '1'  // ຈະເອົາໄວ້ເກັບຄ່າສະຖານະ
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
